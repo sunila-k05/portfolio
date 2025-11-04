@@ -1,29 +1,33 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+
+// components
 import Navbar from "./components/Navbar";
-import DataCenterScene from "./components/DataCenterScene";
 import HeroOverlay from "./components/HeroOverlay";
-import Skills from "./components/Skills";
+import NeonWaveScene from "./components/NeonWaveScene";
+import SkillsSection from "./components/SkillsSection";
+import ProjectsSection from "./components/ProjectsSection";
+import ContactSection from "./components/ContactSection";
 
 export default function App() {
   return (
-    <Routes>
+    <div style={{ width: "100%", overflowX: "hidden" }}>
 
-      {/* HOME PAGE */}
-      <Route
-        path="/"
-        element={
-          <div style={{ position: "relative", width: "100%", height: "100vh" }}>
-            <Navbar />
-            <HeroOverlay />
-            <DataCenterScene />
-          </div>
-        }
-      />
+      {/* HERO SECTION */}
+      <div style={{ position: "relative", width: "100%", height: "100vh" }}>
+        <Navbar />
+        <HeroOverlay />
+        <NeonWaveScene />
+      </div>
 
-      {/* SKILLS PAGE */}
-      <Route path="/skills" element={<Skills />} />
+      {/* SKILLS */}
+      <SkillsSection />
 
-    </Routes>
+      {/* PROJECTS */}
+      <ProjectsSection />
+
+      {/* CONTACT */}
+      <ContactSection />
+
+    </div>
   );
 }

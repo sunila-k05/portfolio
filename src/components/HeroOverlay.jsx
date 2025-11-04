@@ -5,7 +5,7 @@ export default function HeroOverlay() {
     <div
       style={{
         position: "absolute",
-        top: "35vh",
+        top: "32vh",
         width: "100%",
         textAlign: "center",
         color: "white",
@@ -13,12 +13,16 @@ export default function HeroOverlay() {
         zIndex: 10
       }}
     >
-      <h1 style={{ fontSize: "48px", fontWeight: "700", marginBottom: "10px" }}>
-        GCP & DevOps Engineer
+      <h1 style={{ fontSize: "60px", fontWeight: "800", margin: 0 }}>
+        Sunil K
       </h1>
 
-      <p style={{ fontSize: "20px", opacity: 0.8 }}>
-        I design scalable infrastructure, automation and CI/CD pipelines.
+      <h2 style={{ fontSize: "32px", fontWeight: "600", marginTop: "10px", opacity: 0.9 }}>
+        GCP & DevOps Engineer
+      </h2>
+
+      <p style={{ marginTop: "18px", fontSize: "18px", maxWidth: "700px", marginLeft: "auto", marginRight: "auto", opacity: 0.8 }}>
+        I solve real infrastructure problems using GCP, Kubernetes and DevOps automation to deliver reliable, fast deployments.
       </p>
     </div>
   );
