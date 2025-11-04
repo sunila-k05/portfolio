@@ -1,0 +1,15 @@
+html,body,#root { height: 100%; margin: 0; background: #0a0f1a; color: #dce7ff; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; }
+.ui {
+  position: fixed; inset: 0; pointer-events: none; display: flex; flex-direction: column; justify-content: space-between;
+}
+.ui .top { display: flex; justify-content: space-between; padding: 16px; }
+.ui .card {
+  pointer-events: auto; background: rgba(10,16,26,.6); border: 1px solid rgba(120,180,255,.2);
+  backdrop-filter: blur(10px); border-radius: 14px; padding: 14px 16px; box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+.ui a { color: #7cc3ff; text-decoration: none; }
+.badge { display:inline-block; padding:2px 8px; border-radius:999px; background:#112033; border:1px solid #1f3555; margin-right:6px; font-size:12px; }
+.footer { padding: 8px 16px; opacity:.7; }
+.button {
+  pointer-events:auto; border:1px solid #234d80; background:#0b1727; color:#cfe6ff; padding:8px 12px; border-radius:10px; margin-right:8px;
+}
